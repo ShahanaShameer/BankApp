@@ -33,61 +33,62 @@ export class LoginComponent implements OnInit {//(3rd execute)
     //It's a life cycle hooks of angular
     //when the component is created at same time it will initialize or authorized
   }
-//   login(){
-//     //alert('Login clicked');
-//     var acno=this.acno;
-//     var pswd=this.pswd;
-//     var userDetails=this.userDetails;
-//     if(acno in userDetails){
-//       if(pswd==userDetails[acno]['password']){
-//         alert('Login successful');
-//       }
-//       else{
-//         alert('Invalid password');
-//       }
-//     }
-//     else{
-//       alert('Invalid user details');
-//     }
-
-//   }
-// acnoChange(event:any){
-//   console.log(event);
-//   this.acno=event.target.value;
-//   console.log(this.acno);
-// }
-// pswdChange(event:any){
-//   this.pswd=event.target.value;
-//   console.log(this.pswd);
-  
-// }
-login(a:any,p:any){
-  //alert('Login clicked');
-  var acno=a.value;
-  var pswd=p.value;
-  var userDetails=this.userDetails;
-  if(acno in userDetails){
-    if(pswd==userDetails[acno]['password']){
-      alert('Login successful');
+  login(){
+    //alert('Login clicked');
+    var acno=this.acno;
+    var pswd=this.pswd;
+    var userDetails=this.userDetails;
+    if(acno in userDetails){
+      if(pswd==userDetails[acno]['password']){
+        alert('Login successful');
+      }
+      else{
+        alert('Invalid password');
+      }
     }
     else{
-      alert('Invalid password');
+      alert('Invalid user details');
     }
-  }
-  else{
-    alert('Invalid user details');
-  }
 
-}
+  }
 acnoChange(event:any){
-console.log(event);
-this.acno=event.target.value;
-console.log(this.acno);
+  console.log(event);
+  this.acno=event.target.value;
+  console.log(this.acno);
 }
 pswdChange(event:any){
-this.pswd=event.target.value;
-console.log(this.pswd);
-
+  this.pswd=event.target.value;
+  console.log(this.pswd);
+  
 }
-
 }
+// login(a:any,p:any){
+//   //alert('Login clicked');
+//   var acno=a.value;
+//   var pswd=p.value;
+//   var userDetails=this.userDetails;
+//   if(acno in userDetails){
+//     if(pswd==userDetails[acno]['password']){
+//       alert('Login successful');
+//     }
+//     else{
+//       alert('Invalid password');
+//     }
+//   }
+//   else{
+//     alert('Invalid user details');
+//   }
+
+// }
+// acnoChange(event:any){
+// console.log(event);
+// this.acno=event.target.value;
+// console.log(this.acno);
+// }
+// pswdChange(event:any){
+// this.pswd=event.target.value;
+// console.log(this.pswd);
+
+// }
+
+// }

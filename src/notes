@@ -1,4 +1,4 @@
-                ANGULAR
+                  AGULAR
  Basic Building Blocks
 
  1)Module - To import 3rd party Module
@@ -30,4 +30,17 @@
          b)Event binding using $event-(event_name)="function_name($event)"
          c)Event binding using templtate referencing variable - #variable_name
 2)Two way data binding
-DAta sharing in both direction(ts->html html->ts)     
+Data sharing in both direction(ts->html html->ts)  
+      1)ngModel binding - import formsModule in app.module.ts
+      [(ngModel)]="property_name"
+
+      Angular Routing
+      
+      To set path for component
+      {
+            path:value,component:component_name
+      },
+      login
+      {
+            path:'',component:LoginComponent
+      }
